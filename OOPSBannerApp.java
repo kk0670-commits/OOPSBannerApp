@@ -1,23 +1,57 @@
 /**
  * OOPSBannerApp
  *
- * UC2: Render OOPS as Banner using Print Statements
+ * UC3: Render OOPS Banner using String.join()
+ *
+ * Refactored version of UC2 using String.join()
  *
  * @author Sai Krishna
- * @version 2.0
+ * @version 3.0
  */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        // Each letter is 7 lines height and width 9
+        System.out.println(String.join(" ",
+                "  *****  ",
+                "  *****  ",
+                " ******  ",
+                " ******  "));
 
-        System.out.println("  *****     *****    ******    ****** ");
-        System.out.println(" *     *   *     *   *     *   *      ");
-        System.out.println(" *     *   *     *   *     *   *      ");
-        System.out.println(" *     *   *     *   ******     ***** ");
-        System.out.println(" *     *   *     *   *          *     ");
-        System.out.println(" *     *   *     *   *          *     ");
-        System.out.println("  *****     *****    *          ******");
+        System.out.println(String.join(" ",
+                " *     * ",
+                " *     * ",
+                " *     * ",
+                " *       "));
+
+        System.out.println(String.join(" ",
+                " *     * ",
+                " *     * ",
+                " *     * ",
+                " *       "));
+
+        System.out.println(String.join(" ",
+                " *     * ",
+                " *     * ",
+                " ******  ",
+                "  *****  "));
+
+        System.out.println(String.join(" ",
+                " *     * ",
+                " *     * ",
+                " *       ",
+                "      *  "));
+
+        System.out.println(String.join(" ",
+                " *     * ",
+                " *     * ",
+                " *       ",
+                "      *  "));
+
+        System.out.println(String.join(" ",
+                "  *****  ",
+                "  *****  ",
+                " *       ",
+                " ******  "));
     }
 }
