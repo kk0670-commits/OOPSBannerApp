@@ -1,23 +1,19 @@
-/**
- * OOPSBannerApp
- *
- * UC2: Render OOPS as Banner using Print Statements
- *
- * @author Sai Krishna
- * @version 2.0
- */
-public class OOPSBannerApp {
+public class BannerApp {
 
     public static void main(String[] args) {
 
-        // Each letter is 7 lines height and width 9
+        String[] banner = new String[7];
 
-        System.out.println("  *****     *****    ******    ****** ");
-        System.out.println(" *     *   *     *   *     *   *      ");
-        System.out.println(" *     *   *     *   *     *   *      ");
-        System.out.println(" *     *   *     *   ******     ***** ");
-        System.out.println(" *     *   *     *   *          *     ");
-        System.out.println(" *     *   *     *   *          *     ");
-        System.out.println("  *****     *****    *          ******");
+        banner[0] = " *****   *****   *****   ***** ";
+        banner[1] = "*     * *     *  *   *   *    ";
+        banner[2] = "*     * *     *  *   *   *     ";
+        banner[3] = "*     * *     *  *****    ****";
+        banner[4] = "*     * *     *  *            *";
+        banner[5] = "*     * *     *  *            *";
+        banner[6] = " *****   *  * *  *       *****";
+
+        for(String line : banner) {
+            System.out.println(line);
+        }
     }
 }
